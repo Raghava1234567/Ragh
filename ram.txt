@@ -1,0 +1,39 @@
+package Raj;
+
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+
+import org.openqa.selenium.OutputType;
+
+import org.openqa.selenium.TakesScreenshot;
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import org.testng.annotations.Test;
+
+public class Ram {
+
+   
+    public void test () 
+
+		WebDriver driver ;
+    	System.setProperty("webdriver.firefox.marionette","C:\\geckodriver.exe");
+    	driver = new FirefoxDriver();
+driver.get("https://en.wikipedia.org/wiki/Selenium");
+driver.findElement(By.xpath("//*(contains ( text(),'External link's))");
+Assert.assertEquals(actual,"External links");
+driver.findElement(By.xpath("//*[@id="mw- content- text"]/div/div[19]/table/tbody/try[2]/td/div/table/tbody/try[3]/td[7]/a/span"). click ();
+driver.getTitle();
+Assert.assertEquals( actual, Oxygen);
+ TakesScreenshot scrshot =((TakesScreenshot)webdriver);
+ File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+FileUtils.copyFile(SrcFile, "Screen shot.JPg");
+driver.findElement(By.CssSelector("//input [@type= ' search']").sendkeys("Pluto");
+driver.findElement(By.CssSelector("//input [@type= ' search']").Clear(). sendkeys ("Plutonium");
+driver.quit();
+}
+
+
