@@ -20,7 +20,7 @@ public class Ram {
     public void test () 
 
 	WebDriver driver ;
-    	System.setProperty("webdriver.firefox.marionette","C:\\geckodriver.exe");
+    	System.setProperty("webdriver.firefox.driver,"C:\\geckodriver.exe");
     	driver = new FirefoxDriver();
 driver.get("https://en.wikipedia.org/wiki/Selenium");
 driver.findElement(By.xpath("//*(contains ( text(),'External link's))");
