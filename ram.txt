@@ -19,7 +19,7 @@ public class Ram {
    
     public void test () 
 
-		WebDriver driver ;
+	WebDriver driver ;
     	System.setProperty("webdriver.firefox.marionette","C:\\geckodriver.exe");
     	driver = new FirefoxDriver();
 driver.get("https://en.wikipedia.org/wiki/Selenium");
@@ -31,8 +31,8 @@ Assert.assertEquals( actual, Oxygen);
  TakesScreenshot scrshot =((TakesScreenshot)webdriver);
  File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
 FileUtils.copyFile(SrcFile, "Screen shot.JPg");
-driver.findElement(By.CssSelector("//input [@type= ' search']").sendkeys("Pluto");
-driver.findElement(By.CssSelector("//input [@type= ' search']").Clear(). sendkeys ("Plutonium");
+driver.findElement(By.xpath("//input [@type= ' search']").sendkeys("Pluto");
+driver.findElement(By.xpath("//input [@type= ' search']").Clear(). sendkeys ("Plutonium");
 driver.quit();
 }
 
